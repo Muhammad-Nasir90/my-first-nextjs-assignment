@@ -2,26 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.contact-info {
+    background-color: #0d44dd; /* Light background */
+    text-align: center;
+    color: white;
+    border-radius: 8px; /* Rounded corners */
+    padding: 0px; /* Inner spacing */
+    max-width: 550px; /* Limit the width */
+    margin: 20px auto; /* Center the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    font-family: sans-serif;
+   
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.standard-text {
+    font-family: 'Arial', 'Helvetica', sans-serif; /* Font family */
+    font-size: 16px; /* Base font size */
+    font-weight: 400; /* Normal weight */
+    line-height: 1.5; /* Line height for readability */
+    color: #ffffff; /* Text color */
+    text-align:center; /* Default alignment */
+    letter-spacing: 0.5px; /* Space between letters */
+    margin: 2; /* No margin */
+    padding: 2; /* No padding */
+    
+}
+/* styles/custom.css */
+@media (max-width: 768px) {
+    /* Custom styles for tablets and smaller devices */
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 480px) {
+    /* Custom styles for mobile devices */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
